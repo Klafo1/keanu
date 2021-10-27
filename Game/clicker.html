@@ -1,18 +1,43 @@
 <script>
     var clicks = 0;
+   
 </script>
 <html>
     <head><title>0 clicks</title></head>
     <body>
         
-        <a href=# onclick="add()"><img src="tap-here.gif"style = width: </a>
+        <html>
+<body>
+    <script> type="text/javascript" src ="Location.java" </script>
+<center><script type="text/javascript">
+        function addimage() { 
+          var img = document.createElement("img");
+          img.src = "bricks.png"; 
+          img.height = 50; 
+          img.width = 100;
+          
+
+         
+          var class_name = "foo";
+          img.setAttribute("class", class_name);
+
+          document.body.appendChild(img);
+        }
+</script></center>
+</head>
+<body>
+    <center><a href=# onclick="addimage(),add()"><img src="tap-here.gif"style = width: </a>
         <br><br>
+</body>
+</html>
+        
         Clicks:
         <input type="text" id="text" disabled style= text-align:center>
         <script>
             function add(){
                 clicks = clicks + 1
                 document.getElementById('text').value = clicks;
+                    
             }
         </script>
 
